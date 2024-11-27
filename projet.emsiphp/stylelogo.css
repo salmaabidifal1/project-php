@@ -1,0 +1,108 @@
+/* Style pour le logo dans la navbar */
+.logo {
+    width: 70px; /* Largeur du logo */
+    height: 70px; /* Hauteur du logo */
+    object-fit: cover; /* Ajuste l'image à la zone du triangle */
+    margin-left: 0; /* Supprime la marge à gauche */
+    margin-right: 20px; /* Ajoute une marge à droite */
+    background-color: rgba(255, 255, 255, 0.5); /* Fond transparent */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre subtile */
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%); /* Transforme l'image en triangle */
+}
+     
+
+/* Conteneur principal */
+.wrapper {
+    display: flex; /* Dispose les éléments en ligne */
+    height: 100vh; /* Hauteur pleine de la fenêtre */
+    background-color: #f4f4f4; /* Couleur de fond neutre */
+}
+
+/* Section gauche - Image */
+.image-section {
+    flex: 1; /* Laisse l'image occuper l'espace nécessaire */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eaeaea; /* Fond gris clair pour contraste */
+}
+
+.side-image {
+    max-width: 100%; /* Adapte l'image à la largeur */
+    height: auto; /* Conserve les proportions */
+    border-radius: 10px; /* Coins légèrement arrondis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+}
+
+/* Section droite - Formulaire */
+.inner {
+    flex: 1; /* Laisse le formulaire occuper l'espace nécessaire */
+    display: flex;
+    flex-direction: column; /* Organise les éléments verticalement */
+    justify-content: center; /* Centre verticalement */
+    align-items: center; /* Centre horizontalement */
+    padding: 40px; /* Espacement autour du contenu */
+    background-color: white; /* Fond blanc */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+    border-radius: 10px; /* Coins arrondis */
+}
+
+/* Style du formulaire */
+form h3 {
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 24px;
+    color: #333;
+}
+
+.form-wrapper {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.form-wrapper label {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #DAA520; /* Couleur dorée */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #c69318; /* Couleur plus foncée au survol */
+}
+
+p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
+
+p a {
+    color: #DAA520;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
